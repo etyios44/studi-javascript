@@ -1,0 +1,130 @@
+/* google font */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('./Lato/Lato-Thin.ttf');
+}
+
+body {
+  font-family: myFirstFont;
+  background-color: coral;
+  min-width: 650px;
+  min-height: 650px;
+  --color-noplay: rgb(243, 243, 243);
+  --color-play: #cacbcc;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  border: 50px;
+  border-color: brown;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* active player background */
+
+.play {
+  grid-area: 1 / 1 / span 16 / span 7;
+  background-color: var(--color-play);
+}
+
+.noplay {
+  grid-area: 1 / 8 / span 16 / span 7;
+   background-color: var(--color-noplay);
+}
+
+/* areas */
+
+.newGame {
+  grid-area: 2 / 7 / span 1 / span 2;
+  font-size: 20px;
+}
+
+.player {
+  font-size: 35px;
+}
+
+.player1 {
+  grid-area: 3 / 2 / span 1 / span 4;
+  font-weight:bold;
+}
+
+.player2 {
+  grid-area: 3 / 10 / span 1 / span 4;
+}
+
+.point1 {
+  grid-area: 4 / 3 / span 1 / span 2;
+  font-size: 100px;
+  color: red;
+}
+
+.dice {
+  grid-area: 4 / 7 / span 1 / span 2;
+  background-color: white;
+  box-shadow: 0 10px 10px -10px gray;
+}
+
+.point2 {
+  grid-area: 4 / 11 / span 2 / span 2;
+  font-size: 100px;
+  color: red;
+}
+
+.space { 
+  grid-area: 10 / 7 / span 2 / span 2;
+  padding: 50px;
+  margin: 50px;
+}
+
+.current {
+  background-color: red;
+}
+
+.current1 {
+  grid-area: 13 / 3 / span 2 / span 2;
+  font-size: 12px;
+}
+
+.count1 {
+  grid-area: 14 / 3 / span 2 / span 2;
+  font-size: 30px;
+  color: white;
+}
+
+.rool {
+  grid-area: 13 / 6 / span 1 / span 4;
+  font-size: 20px;
+}
+
+.hold {
+  grid-area: 14 / 6 / span 1 / span 4;
+  font-size: 20px;
+}
+
+.current2 {
+  grid-area: 13 / 11 / span 2 / span 2;
+  font-size: 12px;
+}
+
+.count2 {
+  grid-area: 14 / 11 / span 2 / span 2;
+  font-size: 30px;
+  color: white;
+}
+
+.footer {
+  grid-area: 16 / 1 / span 1 / span 13;
+}
+
+/* color ionic icons */
+
+.RedDiceIcons {
+    margin-top: 10px;
+    color: red;
+}
